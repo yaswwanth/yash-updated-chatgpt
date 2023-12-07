@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+            Simple Calculator
+        </h1>
+            
+    </header>
+    <div class="calculator">
+        
+        <label for="display">Calculator Display:</label>
+        <input type="text" id="display" disabled="">
+
+        <div class="buttons">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="setOperation('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="setOperation('-')">-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="setOperation('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="setOperation('/')">/</button>
+        </div>
+        
+ 
+    
+        <!-- Video Section -->
+        <div id="video" class="video-container">
+            <!-- Video Content -->
+        </div>
+    
+        <!-- Feedback Section -->
+        <div id="feedback" class="feedback">
+            <!-- Feedback Content -->
+        </div>
+    <footer>
+        <p>&copy; 2023 Simple Calculator</p>
+    </footer>
+
+    <div class="video-container">
+        <video width="320" height="150" controls>
+            <source src="C:\Users\yasww\OneDrive\Desktop\chatgpt\UNT.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback">
+        <button onclick="like()">👍 Like</button>
+        <span id="likeCount" style="color: rgb(255, 255, 255); background-color: rgb(60, 179, 113);">
+            0
+        </span>
+            
+        <button onclick="dislike()">👎 Dislike</button>
+        <span id="dislikeCount" style="color: rgb(255, 255, 255); background-color: rgb(255, 0, 0);">
+            0
+        </span>
+            
+    </div>
+    <div class="selectors">
+        <label for="themeSelector">Choose a Theme:</label>
+        <select id="themeSelector" onchange="changeTheme(this.value)">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

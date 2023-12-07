@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Existing CSS */
+
+.video-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.feedback {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feedback button {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #54d7e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback span {
+    font-size: 16px;
+}
+
+
+.calculator {
+    background-color: #f35959;
+     /* Semi-transparent white background */
+    width: 346px; /* Setting width */
+    height: 220px; /* Setting height to make it square */
+    padding: 10px;
+    margin: 50px auto; /* Centering the calculator */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-rows: 1fr 3fr; /* Dividing into display and button area */
+}
+
+#display {
+    width: calc(100% - 20px); /* Full width minus padding */
+    height: 40px; /* Height of the display */
+    margin: 10px;
+    text-align: right; /* Aligning text to the right */
+    padding-right: 10px; /* Padding for text inside display */
+    border: none;
+    background-color: #eee; /* Light grey background for display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creating a 4x4 grid for buttons */
+    gap: 5px; /* Space between buttons */
+}
+
+.buttons button {
+    width: 100%; /* Full width of the grid cell */
+    height: 100%; /* Full height of the grid cell */
+    font-size: 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #ccc; /* Slightly darker on hover */
+}
+
+footer {
+    background-color: #c9c966;
+    color: black;
+    position: relative;
+    bottom: -300px;
+    width: 100%;
+    padding: 1px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+header {
+    background-color: #aca9e7; /* Green background for header */
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+/* Existing CSS */
+
+.selectors {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.selectors label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.selectors select {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+/* Existing CSS */
+
+.navbar {
+    background-color: #333; /* Dark background for navbar */
+    overflow: hidden; /* Ensures the content is contained within the navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* Removes bullet points from list */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left; /* Aligns the menu items horizontally */
+}
+
+.navbar li a {
+    display: block; /* Makes the entire area clickable */
+    color: white; /* Text color */
+    text-align: center; /* Centers the text */
+    padding: 14px 16px; /* Spacing around the text */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.navbar li a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Dark text on hover */
+}
+
